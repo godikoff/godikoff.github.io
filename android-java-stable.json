@@ -1,0 +1,1348 @@
+{
+    "studies": [
+        {
+            "name": "a_a_18_3_1",
+            "salt": "a_a_18_3_1",
+            "default_group_name": "default_disabled",
+            "logging": "env",
+            "groups": [
+                {
+                    "name": "enabled_100_new",
+                    "slots": "0-99",
+                    "filter": {
+                        "min_install_date": "2018-04-09Z"
+                    }
+                },
+                {
+                    "name": "disabled_100_new",
+                    "slots": "100-199",
+                    "filter": {
+                        "min_install_date": "2018-04-09Z"
+                    }
+                },
+                {
+                    "name": "enabled_300_new",
+                    "slots": "200-499",
+                    "filter": {
+                        "min_install_date": "2018-04-09Z"
+                    }
+                },
+                {
+                    "name": "disabled_300_new",
+                    "slots": "500-799",
+                    "filter": {
+                        "min_install_date": "2018-04-09Z"
+                    }
+                },
+                {
+                    "name": "kubr_enabled_100_new",
+                    "slots": "800-899",
+                    "filter": {
+                        "countries": "KZ, BY, UA, RU",
+                        "min_install_date": "2018-04-09Z"
+                    }
+                },
+                {
+                    "name": "kubr_disabled_100_new",
+                    "slots": "900-999",
+                    "filter": {
+                        "countries": "KZ, BY, UA, RU",
+                        "min_install_date": "2018-04-09Z"
+                    }
+                },
+                {
+                    "name": "tr_enabled_100_new",
+                    "slots": "800-899",
+                    "filter": {
+                        "countries": "TR",
+                        "min_install_date": "2018-04-09Z"
+                    }
+                },
+                {
+                    "name": "tr_disabled_100_new",
+                    "slots": "900-999",
+                    "filter": {
+                        "countries": "TR",
+                        "min_install_date": "2018-04-09Z"
+                    }
+                },
+                {
+                    "name": "other_enabled_100_new",
+                    "slots": "800-899",
+                    "exclude_filter": {
+                        "countries": "KZ, BY, UA, RU, TR"
+                    },
+                    "filter": {
+                        "min_install_date": "2018-04-09Z"
+                    }
+                },
+                {
+                    "name": "other_disabled_100_new",
+                    "slots": "900-999",
+                    "exclude_filter": {
+                        "countries": "KZ, BY, UA, RU, TR"
+                    },
+                    "filter": {
+                        "min_install_date": "2018-04-09Z"
+                    }
+                },
+                {
+                    "name": "enabled_100_old",
+                    "slots": "0-99",
+                    "filter": {
+                        "max_install_date": "2018-03-12Z"
+                    }
+                },
+                {
+                    "name": "disabled_100_old",
+                    "slots": "100-199",
+                    "filter": {
+                        "max_install_date": "2018-03-12Z"
+                    }
+                },
+                {
+                    "name": "enabled_300_old",
+                    "slots": "200-499",
+                    "filter": {
+                        "max_install_date": "2018-03-12Z"
+                    }
+                },
+                {
+                    "name": "disabled_300_old",
+                    "slots": "500-799",
+                    "filter": {
+                        "max_install_date": "2018-03-12Z"
+                    }
+                },
+                {
+                    "name": "kubr_enabled_100_old",
+                    "slots": "800-899",
+                    "filter": {
+                        "countries": "KZ, BY, UA, RU",
+                        "max_install_date": "2018-03-12Z"
+                    }
+                },
+                {
+                    "name": "kubr_disabled_100_old",
+                    "slots": "900-999",
+                    "filter": {
+                        "countries": "KZ, BY, UA, RU",
+                        "max_install_date": "2018-03-12Z"
+                    }
+                },
+                {
+                    "name": "tr_enabled_100_old",
+                    "slots": "800-899",
+                    "filter": {
+                        "countries": "TR",
+                        "max_install_date": "2018-03-12Z"
+                    }
+                },
+                {
+                    "name": "tr_disabled_100_old",
+                    "slots": "900-999",
+                    "filter": {
+                        "countries": "TR",
+                        "max_install_date": "2018-03-12Z"
+                    }
+                },
+                {
+                    "name": "other_enabled_100_old",
+                    "slots": "800-899",
+                    "exclude_filter": {
+                        "max_install_date": "2018-03-12Z"
+                    },
+                    "filter": {
+                        "max_install_date": "2018-02-22Z"
+                    }
+                },
+                {
+                    "name": "other_disabled_100_old",
+                    "slots": "900-999",
+                    "exclude_filter": {
+                        "countries": "KZ, BY, UA, RU, TR"
+                    },
+                    "filter": {
+                        "max_install_date": "2018-03-12Z"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "a_a_install_build_number",
+            "salt": "install_build_number",
+            "default_group_name": "default_disabled",
+            "logging": "env",
+            "groups": [
+                {
+                    "name": "enabled_min_build_number",
+                    "slots": "0-999",
+                    "filter": {
+                        "min_install_build_number": 1803100000
+                    }
+                }
+            ]
+        },
+        {
+            "name": "a_a_min_install_date_3",
+            "salt": "install_build_number",
+            "default_group_name": "default_disabled",
+            "logging": "env",
+            "groups": [
+                {
+                    "name": "enabled_min_install_date_3",
+                    "slots": "0-999",
+                    "filter": {
+                        "min_install_date": "2018-04-03Z"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "a_a_min_install_date_10",
+            "salt": "install_build_number",
+            "default_group_name": "default_disabled",
+            "logging": "env",
+            "groups": [
+                {
+                    "name": "enabled_min_install_date_10",
+                    "slots": "0-999",
+                    "filter": {
+                        "min_install_date": "2018-04-10Z"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ad_hide_with_antishock",
+            "salt": "ad_hide_with_antishock",
+            "default_group_name": "default_enabled",
+            "composite_filter": "country in [RU]",
+            "params": {
+                "adblock_by_default": "true",
+                "performance_measurement_rate": 1,
+                "stat_resource_max_count": 30,
+                "report_blocked_url_rate": 1,
+                "report_blocked_css_rate": 1,
+                "inject_css": "true",
+                "snackbar": "true",
+                "welcome_update": "https://zen.yandex.ru/media/id/59255ed5d7d0a6dd64f31525/5a6f33a977d0e6ddfee605fd/",
+                "counter": "hard"
+            },
+            "groups": [
+                {
+                    "name": "enabled_with_welcome_new",
+                    "slots": "300-449",
+                    "filter": {
+                        "min_install_date": "2018-02-15Z",
+                        "max_install_date": "2018-03-12Z"
+                    },
+                    "params": {
+                        "adblock_by_default": "true",
+                        "performance_measurement_rate": 1,
+                        "stat_resource_max_count": 30,
+                        "report_blocked_url_rate": 1,
+                        "report_blocked_css_rate": 1,
+                        "inject_css": "true",
+                        "snackbar": "true",
+                        "welcome_update": "https://zen.yandex.ru/media/id/59255ed5d7d0a6dd64f31525/5a6f33a977d0e6ddfee605fd/",
+                        "counter": "hard"
+                    }
+                },
+                {
+                    "name": "enabled_without_welcome_new",
+                    "slots": "450-599",
+                    "filter": {
+                        "min_install_date": "2018-02-15Z",
+                        "max_install_date": "2018-03-12Z"
+                    },
+                    "params": {
+                        "adblock_by_default": "true",
+                        "performance_measurement_rate": 1,
+                        "stat_resource_max_count": 30,
+                        "report_blocked_url_rate": 1,
+                        "report_blocked_css_rate": 1,
+                        "inject_css": "true",
+                        "snackbar": "true",
+                        "welcome_update": "",
+                        "counter": "hard"
+                    }
+                },
+                {
+                    "name": "18_1_1_enabled_with_counter_new",
+                    "slots": "0-999",
+                    "filter": {
+                        "min_install_date": "2018-03-12Z"
+                    },
+                    "params": {
+                        "adblock_by_default": "true",
+                        "performance_measurement_rate": 1,
+                        "stat_resource_max_count": 30,
+                        "report_blocked_url_rate": 1,
+                        "report_blocked_css_rate": 1,
+                        "inject_css": "true",
+                        "snackbar": "true",
+                        "welcome_update": "",
+                        "counter": "hard"
+                    }
+                },
+                {
+                    "name": "enabled_with_welcome_old",
+                    "slots": "100-149",
+                    "filter": {
+                        "max_install_date": "2018-01-15Z"
+                    },
+                    "params": {
+                        "adblock_by_default": "true",
+                        "performance_measurement_rate": 1,
+                        "stat_resource_max_count": 30,
+                        "report_blocked_url_rate": 1,
+                        "report_blocked_css_rate": 1,
+                        "inject_css": "true",
+                        "snackbar": "true",
+                        "welcome_update": "https://zen.yandex.ru/media/id/59255ed5d7d0a6dd64f31525/5a6f33a977d0e6ddfee605fd/",
+                        "counter": "hard"
+                    }
+                },
+                {
+                    "name": "enabled_without_welcome_old",
+                    "slots": "150-199",
+                    "filter": {
+                        "max_install_date": "2018-01-15Z"
+                    },
+                    "params": {
+                        "adblock_by_default": "true",
+                        "performance_measurement_rate": 1,
+                        "stat_resource_max_count": 30,
+                        "report_blocked_url_rate": 1,
+                        "report_blocked_css_rate": 1,
+                        "inject_css": "true",
+                        "snackbar": "true",
+                        "welcome_update": "",
+                        "counter": "hard"
+                    }
+                },
+                {
+                    "name": "18_1_1_enabled_with_counter_old",
+                    "slots": "200-399",
+                    "filter": {
+                        "max_install_date": "2018-02-12Z"
+                    },
+                    "params": {
+                        "adblock_by_default": "true",
+                        "performance_measurement_rate": 1,
+                        "stat_resource_max_count": 30,
+                        "report_blocked_url_rate": 1,
+                        "report_blocked_css_rate": 1,
+                        "inject_css": "true",
+                        "snackbar": "true",
+                        "welcome_update": "https://zen.yandex.ru/media/id/59255ed5d7d0a6dd64f31525/5a6f33a977d0e6ddfee605fd/",
+                        "counter": "hard"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ads_logging",
+            "salt": "17111_ads_logging",
+            "default_group_name": "default_disabled",
+            "filter": {
+                "min_ram": 2048
+            },
+            "groups": [
+                {
+                    "name": "enabled_17111",
+                    "slots": "0-49,250-399",
+                    "params": {
+                        "enable_native_features": "SafeContent"
+                    }
+                },
+                {
+                    "name": "disabled_17111",
+                    "slots": "50-249",
+                    "params": {
+                        "disable_native_features": "SafeContent"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "alice_shortcut",
+            "salt": "alice_shortcut_18_1_0",
+            "default_group_name": "default_disabled",
+            "groups": [
+                {
+                    "name": "enabled_new",
+                    "slots": "0-199",
+                    "filter": {
+                        "min_install_date": "2018-02-15Z"
+                    }
+                },
+                {
+                    "name": "disabled_new",
+                    "slots": "200-399",
+                    "filter": {
+                        "min_install_date": "2018-02-15Z"
+                    }
+                },
+                {
+                    "name": "enabled_old",
+                    "slots": "0-49",
+                    "filter": {
+                        "max_install_date": "2018-01-18Z"
+                    }
+                },
+                {
+                    "name": "disabled_old",
+                    "slots": "50-99",
+                    "filter": {
+                        "max_install_date": "2018-01-18Z"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "cache_recent_pages",
+            "salt": "cache_recent_pages",
+            "default_group_name": "default_disabled",
+            "composite_filter": "form_factor == phone",
+            "groups": [
+                {
+                    "name": "enabled_ru",
+                    "slots": "0-999",
+                    "composite_filter": "country in [KZ, BY, UA, RU]",
+                    "params": {
+                        "enable_native_features": "OfflineRecentPages",
+                        "recent_tabs_count": "50",
+                        "show_copy_on_good_connection": "false",
+                        "show_copy_on_slow_connection": "false",
+                        "show_copy_on_network_problems": "true",
+                        "show_offline_warning_count": "-1",
+                        "save_page_asap": "true",
+                        "show_description_dialog": "false",
+                        "move_task_to_back_on_exit": "true",
+                        "show_offline_tab_switcher": "true",
+                        "show_welcome_popup": "true",
+                        "welcome_popup_url": "https://zen.yandex.ru/media/id/59255ed5d7d0a6dd64f31525/5a703eea6104938af9a1bcab/"
+                    }
+                },
+                {
+                    "name": "enabled_other",
+                    "slots": "0-999",
+                    "composite_filter": "country not in [KZ, BY, UA, RU]",
+                    "params": {
+                        "enable_native_features": "OfflineRecentPages",
+                        "recent_tabs_count": "50",
+                        "show_copy_on_good_connection": "false",
+                        "show_copy_on_slow_connection": "false",
+                        "show_copy_on_network_problems": "true",
+                        "show_offline_warning_count": "-1",
+                        "save_page_asap": "true",
+                        "show_description_dialog": "false",
+                        "move_task_to_back_on_exit": "true",
+                        "show_offline_tab_switcher": "true",
+                        "show_welcome_popup": "true"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "enable_opera_store",
+            "salt": "enable_opera_store",
+            "default_group_name": "default_disabled",
+            "groups": [
+                {
+                    "name": "disabled",
+                    "slots": "0-999"
+                }
+            ]
+        },
+        {
+            "name": "image_search",
+            "salt": "image_search",
+            "default_group_name": "default_disabled",
+            "params": {
+                "show_promo_ui": "false",
+                "show_button_in_omnibox": "false"
+            },
+            "groups": [
+                {
+                    "name": "disabled_old",
+                    "slots": "0-49",
+                    "params": {
+                        "show_promo_ui": "false",
+                        "show_button_in_omnibox": "false"
+                    },
+                    "filter": {
+                        "max_install_date": "2018-04-01Z"
+                    }
+                },
+                {
+                    "name": "enabled_old",
+                    "slots": "50-99",
+                    "params": {
+                        "show_promo_ui": "false",
+                        "show_button_in_omnibox": "false"
+                    },
+                    "filter": {
+                        "max_install_date": "2018-04-01Z"
+                    }
+                },
+                {
+                    "name": "enabled_with_omnibox_ui_old",
+                    "slots": "100-149",
+                    "params": {
+                        "show_promo_ui": "false",
+                        "show_button_in_omnibox": "true"
+                    },
+                    "filter": {
+                        "max_install_date": "2018-04-01Z"
+                    }
+                },
+                {
+                    "name": "enabled_with_promo_and_ui_old",
+                    "slots": "150-199",
+                    "params": {
+                        "show_promo_ui": "true",
+                        "show_button_in_omnibox": "true"
+                    },
+                    "filter": {
+                        "max_install_date": "2018-04-01Z"
+                    }
+                },
+                {
+                    "name": "disabled_new",
+                    "slots": "0-99",
+                    "params": {
+                        "show_promo_ui": "false",
+                        "show_button_in_omnibox": "false"
+                    },
+                    "filter": {
+                        "min_install_date": "2018-04-17Z"
+                    }
+                },
+                {
+                    "name": "enabled_new",
+                    "slots": "100-199",
+                    "params": {
+                        "show_promo_ui": "false",
+                        "show_button_in_omnibox": "false"
+                    },
+                    "filter": {
+                        "min_install_date": "2018-04-17Z"
+                    }
+                },
+                {
+                    "name": "enabled_with_omnibox_ui_new",
+                    "slots": "200-299",
+                    "params": {
+                        "show_promo_ui": "false",
+                        "show_button_in_omnibox": "true"
+                    },
+                    "filter": {
+                        "min_install_date": "2018-04-17Z"
+                    }
+                },
+                {
+                    "name": "enabled_with_promo_and_ui_new",
+                    "slots": "300-399",
+                    "params": {
+                        "show_promo_ui": "true",
+                        "show_button_in_omnibox": "true"
+                    },
+                    "filter": {
+                        "min_install_date": "2018-04-17Z"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "home_button",
+            "salt": "home_button",
+            "default_group_name": "default_disabled",
+            "filter": {
+                "form_factor": "phone"
+            },
+            "groups": [
+                {
+                    "name": "enabled_yandex_right",
+                    "slots": "0-999",
+                    "params": {
+                        "icon": "yandex",
+                        "position": "right"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "morda",
+            "salt": "morda",
+            "default_group_name": "default_enabled",
+            "logging": "zen",
+            "filter": {
+                "form_factor": "phone"
+            },
+            "params": {
+                "new_dashboard": "true",
+                "cards": "true",
+                "card_expansion": "scroll",
+                "new_wallpaper": "true",
+                "dashboard_type": "vertical_fixed",
+                "big_dashboard_without_cards": "true",
+                "instant_cache": "true",
+                "weather_full_boot_delay": 0,
+                "alert_cards": "true",
+                "welcome_update": "true"
+            },
+            "groups": [
+                {
+                    "name": "1831_enabled_no_instant_no_weather_delay_old",
+                    "slots": "750-764",
+                    "filter": {
+                        "max_install_date": "2018-01-18Z"
+                    },
+                    "params": {
+                        "new_dashboard": "true",
+                        "cards": "true",
+                        "card_expansion": "scroll",
+                        "new_wallpaper": "true",
+                        "dashboard_type": "vertical_fixed",
+                        "big_dashboard_without_cards": "true",
+                        "instant_cache": "false",
+                        "weather_full_boot_delay": 0,
+                        "alert_cards": "true",
+                        "welcome_update": "true"
+                    }
+                },
+                {
+                    "name": "1831_enabled_instant_no_weather_delay_old",
+                    "slots": "765-779",
+                    "filter": {
+                        "max_install_date": "2018-01-18Z"
+                    },
+                    "params": {
+                        "new_dashboard": "true",
+                        "cards": "true",
+                        "card_expansion": "scroll",
+                        "new_wallpaper": "true",
+                        "dashboard_type": "vertical_fixed",
+                        "big_dashboard_without_cards": "true",
+                        "instant_cache": "true",
+                        "weather_full_boot_delay": 0,
+                        "alert_cards": "true",
+                        "welcome_update": "true"
+                    }
+                },
+                {
+                    "name": "1831_enabled_instant_weather_delay_old",
+                    "slots": "780-794",
+                    "filter": {
+                        "max_install_date": "2018-01-18Z"
+                    },
+                    "params": {
+                        "new_dashboard": "true",
+                        "cards": "true",
+                        "card_expansion": "scroll",
+                        "new_wallpaper": "true",
+                        "dashboard_type": "vertical_fixed",
+                        "big_dashboard_without_cards": "true",
+                        "instant_cache": "true",
+                        "weather_full_boot_delay": 3000,
+                        "alert_cards": "true",
+                        "welcome_update": "true"
+                    }
+                },
+                {
+                    "name": "1831_disabled_old",
+                    "slots": "795-809",
+                    "filter": {
+                        "max_install_date": "2018-01-18Z"
+                    },
+                    "params": {
+                        "new_dashboard": "false",
+                        "cards": "false",
+                        "new_wallpaper": "false",
+                        "alert_cards": "false",
+                        "welcome_update": "false",
+                        "big_dashboard_without_cards": "false"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "notification_settings",
+            "salt": "notification_settings_17_11_1",
+            "default_group_name": "default_disabled",
+            "filter": {
+                "min_sdk_version": 26
+            },
+            "groups": [
+                {
+                    "name": "18_1_0_enabled_high_new",
+                    "slots": "0-499",
+                    "params": {
+                        "higher_priority": "true",
+                        "transparent_icon": "false"
+                    },
+                    "filter": {
+                        "min_install_date": "2018-02-19Z"
+                    }
+                },
+                {
+                    "name": "18_1_0_enabled_low_new",
+                    "slots": "500-999",
+                    "params": {
+                        "higher_priority": "false",
+                        "transparent_icon": "false"
+                    },
+                    "filter": {
+                        "min_install_date": "2018-02-19Z"
+                    }
+                },
+                {
+                    "name": "17_11_1_enabled_high_transparent_new",
+                    "slots": "0-249",
+                    "params": {
+                        "higher_priority": "true",
+                        "transparent_icon": "true"
+                    },
+                    "filter": {
+                        "min_install_date": "2018-01-24Z",
+                        "max_install_date": "2018-02-19Z"
+                    }
+                },
+                {
+                    "name": "17_11_1_enabled_high_no_transparent_new",
+                    "slots": "250-499",
+                    "params": {
+                        "higher_priority": "true",
+                        "transparent_icon": "false"
+                    },
+                    "filter": {
+                        "min_install_date": "2018-01-24Z",
+                        "max_install_date": "2018-02-19Z"
+                    }
+                },
+                {
+                    "name": "17_11_1_enabled_low_transparent_new",
+                    "slots": "500-749",
+                    "params": {
+                        "higher_priority": "false",
+                        "transparent_icon": "true"
+                    },
+                    "filter": {
+                        "min_install_date": "2018-01-24Z",
+                        "max_install_date": "2018-02-19Z"
+                    }
+                },
+                {
+                    "name": "17_11_1_enabled_low_no_transparent_new",
+                    "slots": "750-999",
+                    "params": {
+                        "higher_priority": "false",
+                        "transparent_icon": "false"
+                    },
+                    "filter": {
+                        "min_install_date": "2018-01-24Z",
+                        "max_install_date": "2018-02-19Z"
+                    }
+                },
+                {
+                    "name": "17_11_1_enabled_high_transparent_old",
+                    "slots": "0-249",
+                    "params": {
+                        "higher_priority": "true",
+                        "transparent_icon": "true"
+                    },
+                    "filter": {
+                        "max_install_date": "2017-12-27Z"
+                    }
+                },
+                {
+                    "name": "17_11_1_enabled_high_no_transparent_old",
+                    "slots": "250-499",
+                    "params": {
+                        "higher_priority": "true",
+                        "transparent_icon": "false"
+                    },
+                    "filter": {
+                        "max_install_date": "2017-12-27Z"
+                    }
+                },
+                {
+                    "name": "17_11_1_enabled_low_transparent_old",
+                    "slots": "500-749",
+                    "params": {
+                        "higher_priority": "false",
+                        "transparent_icon": "true"
+                    },
+                    "filter": {
+                        "max_install_date": "2017-12-27Z"
+                    }
+                },
+                {
+                    "name": "17_11_1_enabled_low_no_transparent_old",
+                    "slots": "750-999",
+                    "params": {
+                        "higher_priority": "false",
+                        "transparent_icon": "false"
+                    },
+                    "filter": {
+                        "max_install_date": "2017-12-27Z"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "portal_pushes",
+            "salt": "portal_pushes",
+            "default_group_name": "default_disabled",
+            "params": {
+                "theme_tag_add": "null"
+            },
+            "groups": [
+                {
+                    "name": "enabled_new",
+                    "slots": "0-199",
+                    "filter": {
+                        "min_install_date": "2018-03-12Z"
+                    },
+                    "params": {
+                        "theme_tag_add": "assist_all_push_on"
+                    }
+                },
+                {
+                    "name": "disabled_new",
+                    "slots": "200-399",
+                    "filter": {
+                        "min_install_date": "2018-03-12Z"
+                    }
+                },
+                {
+                    "name": "enabled_old",
+                    "slots": "0-49",
+                    "filter": {
+                        "max_install_date": "2018-02-07Z"
+                    },
+                    "params": {
+                        "theme_tag_add": "assist_all_push_on"
+                    }
+                },
+                {
+                    "name": "disabled_old",
+                    "slots": "50-99",
+                    "filter": {
+                        "max_install_date": "2018-02-07Z"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "psm",
+            "salt": "psm",
+            "default_group_name": "default_disabled",
+            "groups": [
+                {
+                    "name": "enabled_with_offer_new",
+                    "slots": "0-199",
+                    "filter": {
+                        "min_install_date": "2018-03-08Z",
+                        "min_build_number": 1801016140
+                    },
+                    "params": {
+                        "enable_native_features": "Passman,AutofillKeyboardAccessory,PassmanMigrationMerge",
+                        "unlock_by_pattern": "true",
+                        "show_promo": "true"
+                    }
+                },
+                {
+                    "name": "enabled_with_offer_old",
+                    "slots": "0-39",
+                    "filter": {
+                        "max_install_date": "2018-02-12Z"
+                    },
+                    "params": {
+                        "enable_native_features": "Passman,AutofillKeyboardAccessory,PassmanMigrationMerge",
+                        "unlock_by_pattern": "true",
+                        "show_promo": "true"
+                    }
+                },
+                {
+                    "name": "enabled_with_offer_new_18_1_2",
+                    "slots": "200-999",
+                    "filter": {
+                        "min_install_date": "2018-03-08Z",
+                        "min_build_number": 1801200670
+                    },
+                    "params": {
+                        "enable_native_features": "Passman,AutofillKeyboardAccessory,PassmanMigrationMerge",
+                        "unlock_by_pattern": "true",
+                        "show_promo": "true"
+                    }
+                },
+                {
+                    "name": "enabled_with_offer_old_18_1_2",
+                    "slots": "40-939",
+                    "filter": {
+                        "max_install_date": "2018-02-12Z",
+                        "min_build_number": 1801200670
+                    },
+                    "params": {
+                        "enable_native_features": "Passman,AutofillKeyboardAccessory,PassmanMigrationMerge",
+                        "unlock_by_pattern": "true",
+                        "show_promo": "true"
+                    }
+                },
+                {
+                    "name": "enabled_with_offer_old_new_18_1_2",
+                    "slots": "0-999",
+                    "filter": {
+                        "max_install_date": "2018-03-08Z",
+                        "min_install_date": "2018-02-12Z",
+                        "min_build_number": 1801200670
+                    },
+                    "params": {
+                        "enable_native_features": "Passman,AutofillKeyboardAccessory,PassmanMigrationMerge",
+                        "unlock_by_pattern": "true",
+                        "show_promo": "true"
+                    }
+                },
+                {
+                    "name": "enabled_with_offer_old_18_3_1",
+                    "slots": "940-969",
+                    "filter": {
+                        "max_install_date": "2018-02-12Z"
+                    },
+                    "params": {
+                        "enable_native_features": "Passman,AutofillKeyboardAccessory,PassmanMigrationMerge",
+                        "unlock_by_pattern": "true",
+                        "show_promo": "true"
+                    }
+                },
+                {
+                    "name": "disabled_18_3_1",
+                    "slots": "970-999",
+                    "filter": {
+                        "max_install_date": "2018-02-12Z"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "renderer_prelauncher",
+            "salt": "renderer_prelauncher",
+            "default_group_name": "default_disabled",
+            "groups": [
+                {
+                    "name": "enabled_new",
+                    "slots": "0-299",
+                    "filter": {
+                        "min_install_date": "2018-04-10Z"
+                    },
+                    "params": {
+                        "enable_native_features": "RendererPrelauncher"
+                    }
+                },
+                {
+                    "name": "disabled_new",
+                    "slots": "300-599",
+                    "filter": {
+                        "min_install_date": "2018-04-10Z"
+                    },
+                    "params": {
+                        "disable_native_features": "RendererPrelauncher"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "sb_subframe_check",
+            "salt": "sb_subframe_check",
+            "default_group_name": "default_disabled",
+            "groups": [
+                {
+                    "name": "enabled",
+                    "slots": "0-99",
+                    "params": {
+                        "enable_native_features": "SafeBrowsingSubframeCheck",
+                        "log_only": "false"
+                    }
+                },
+                {
+                    "name": "enabled_only_log",
+                    "slots": "100-199",
+                    "params": {
+                        "enable_native_features": "SafeBrowsingSubframeCheck",
+                        "log_only": "true"
+                    }
+                },
+                {
+                    "name": "disabled",
+                    "slots": "200-299",
+                    "params": {
+                        "disable_native_features": "SafeBrowsingSubframeCheck"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "track_location",
+            "salt": "track_location",
+            "default_group_name": "default_enabled"
+        },
+        {
+            "name": "web_page_inside",
+            "salt": "web_page_inside",
+            "default_group_name": "default_disabled",
+            "composite_filter": "country in [RU] and form_factor == phone",
+            "groups": [
+                {
+                    "name": "1812_enabled",
+                    "slots": "420-619",
+                    "composite_filter": "login_status != yandex_staff and build_number >= 1801005270",
+                    "params": {
+                        "enable_swipe_closing": "true",
+                        "touch_handle_width": "72",
+                        "touch_handle_heidth": "52",
+                        "json_config_validation": "true"
+                    }
+                },
+                {
+                    "name": "1812_disabled",
+                    "slots": "620-819",
+                    "composite_filter": "login_status != yandex_staff and build_number >= 1801005270"
+                },
+                {
+                    "name": "enabled_for_staff",
+                    "slots": "0-999",
+                    "composite_filter": "login_status == yandex_staff",
+                    "params": {
+                        "design": "native",
+                        "enable_swipe_closing": "true",
+                        "touch_handle_width": "72",
+                        "touch_handle_heidth": "52",
+                        "experimental_backend": "true",
+                        "json_config_validation": "true"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "yandex_collections",
+            "salt": "yandex_collections",
+            "default_group_name": "default_disabled",
+            "groups": [
+                {
+                    "name": "disabled",
+                    "slots": "0-999"
+                }
+            ]
+        },
+        {
+            "name": "yandex_prefetch",
+            "salt": "yandex_prefetch",
+            "default_group_name": "default_enabled"
+        },
+        {
+            "name": "yandex_warmup",
+            "salt": "yandex_warmup",
+            "default_group_name": "default_enabled"
+        },
+        {
+            "name": "zen2",
+            "salt": "zen2",
+            "logging": "zen",
+            "default_group_name": "default_disabled",
+            "filter": {
+                "form_factor": "phone"
+            },
+            "groups": [
+                {
+                    "name": "enabled_new",
+                    "slots": "0-499",
+                    "filter": {
+                        "min_install_date": "2017-12-21Z",
+                        "max_install_date": "2018-01-23Z"
+                    }
+                },
+                {
+                    "name": "1810_enabled_new",
+                    "slots": "0-249",
+                    "filter": {
+                        "min_install_date": "2018-02-27Z",
+                        "min_build_number": 1801005200
+                    }
+                },
+                {
+                    "name": "1810_disabled_new",
+                    "slots": "250-499",
+                    "filter": {
+                        "min_install_date": "2018-02-27Z",
+                        "min_build_number": 1801005200
+                    }
+                },
+                {
+                    "name": "1811_enabled_new",
+                    "slots": "500-749",
+                    "filter": {
+                        "min_install_date": "2018-03-12Z"
+                    }
+                },
+                {
+                    "name": "1811_disabled_new",
+                    "slots": "750-999",
+                    "filter": {
+                        "min_install_date": "2018-03-12Z"
+                    }
+                },
+                {
+                    "name": "enabled_old",
+                    "slots": "0-49",
+                    "filter": {
+                        "max_install_date": "2017-11-21Z"
+                    }
+                },
+                {
+                    "name": "disabled_old",
+                    "slots": "50-99",
+                    "filter": {
+                        "max_install_date": "2017-11-21Z"
+                    }
+                },
+                {
+                    "name": "17111_enabled_old",
+                    "slots": "100-124",
+                    "filter": {
+                        "max_install_date": "2017-12-27Z"
+                    }
+                },
+                {
+                    "name": "17111_disabled_old",
+                    "slots": "125-149",
+                    "filter": {
+                        "max_install_date": "2017-12-27Z"
+                    }
+                },
+                {
+                    "name": "1810_enabled_old",
+                    "slots": "500-549",
+                    "filter": {
+                        "max_install_date": "2018-02-06Z",
+                        "min_build_number": 1801005200
+                    }
+                },
+                {
+                    "name": "1810_disabled_old",
+                    "slots": "550-599",
+                    "filter": {
+                        "max_install_date": "2018-02-06Z",
+                        "min_build_number": 1801005200
+                    }
+                },
+                {
+                    "name": "1811_enabled_old",
+                    "slots": "600-649",
+                    "filter": {
+                        "max_install_date": "2018-02-06Z"
+                    }
+                },
+                {
+                    "name": "1811_disabled_old",
+                    "slots": "650-699",
+                    "filter": {
+                        "max_install_date": "2018-02-06Z"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "zen_refresh_on_back",
+            "salt": "1812_zen_refresh_on_back",
+            "default_group_name": "default_disabled",
+            "filter": {
+                "form_factor": "phone"
+            },
+            "groups": [
+                {
+                    "name": "1812_aged_1w_enabled_new",
+                    "slots": "0-149",
+                    "filter": {
+                        "min_install_date": "2018-04-10Z",
+                        "min_age": 604800
+                    }
+                },
+                {
+                    "name": "1812_aged_2w_enabled_new",
+                    "slots": "150-299",
+                    "filter": {
+                        "min_install_date": "2018-04-10Z",
+                        "min_age": 1209600
+                    }
+                },
+                {
+                    "name": "1812_aged_3w_enabled_new",
+                    "slots": "300-449",
+                    "filter": {
+                        "min_install_date": "2018-04-10Z",
+                        "min_age": 1814400
+                    }
+                },
+                {
+                    "name": "1812_aged_1w_disabled_new",
+                    "slots": "450-599",
+                    "filter": {
+                        "min_install_date": "2018-04-10Z",
+                        "min_age": 604800
+                    }
+                },
+                {
+                    "name": "1812_aged_2w_disabled_new",
+                    "slots": "600-749",
+                    "filter": {
+                        "min_install_date": "2018-04-10Z",
+                        "min_age": 1209600
+                    }
+                },
+                {
+                    "name": "1812_aged_3w_disabled_new",
+                    "slots": "750-899",
+                    "filter": {
+                        "min_install_date": "2018-04-10Z",
+                        "min_age": 1814400
+                    }
+                },
+                {
+                    "name": "1812_enabled_old",
+                    "slots": "0-999",
+                    "filter": {
+                        "max_install_date": "2018-03-12Z"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "zen_turbocards_preload",
+            "salt": "17111_zen_turbocards_preload",
+            "logging": "zen",
+            "default_group_name": "default_disabled",
+            "filter": {
+                "min_sdk_version": 21,
+                "form_factor": "phone",
+                "min_ram": 1024
+            },
+            "params": {
+                "preload_tabs_count": "3",
+                "frame_predrawing_enabled": "false"
+            },
+            "groups": [
+                {
+                    "name": "enabled_preload_on_predrawing_off",
+                    "slots": "0-999"
+                }
+            ]
+        },
+        {
+            "name": "zen_delayed_start",
+            "salt": "zen_delayed_start",
+            "logging": "zen",
+            "default_group_name": "default_disabled",
+            "groups": [
+                {
+                    "name": "enabled_phone_21_new",
+                    "slots": "0-99",
+                    "composite_filter": "form_factor == phone and sdk_version >= 21 and first_install_date >= '2018-04-10Z'"
+                },
+                {
+                    "name": "disabled_phone_21_new",
+                    "slots": "100-199",
+                    "composite_filter": "form_factor == phone and sdk_version >= 21 and first_install_date >= '2018-04-10Z'"
+                },
+                {
+                    "name": "enabled_phone_16_new",
+                    "slots": "0-149",
+                    "composite_filter": "form_factor == phone and sdk_version < 21 and first_install_date >= '2018-04-10Z'"
+                },
+                {
+                    "name": "disabled_phone_16_new",
+                    "slots": "150-299",
+                    "composite_filter": "form_factor == phone and sdk_version < 21 and first_install_date >= '2018-04-10Z'"
+                },
+                {
+                    "name": "enabled_tablet_new",
+                    "slots": "0-99",
+                    "composite_filter": "form_factor == tablet and sdk_version >= 21 and first_install_date >= '2018-04-10Z'"
+                },
+                {
+                    "name": "disabled_tablet_new",
+                    "slots": "100-199",
+                    "composite_filter": "form_factor == tablet and sdk_version >= 21 and first_install_date >= '2018-04-10Z'"
+                },
+                {
+                    "name": "enabled_phone_21_old",
+                    "slots": "0-49",
+                    "composite_filter": "form_factor == phone and sdk_version >= 21 and first_install_date < '2018-03-10Z'"
+                },
+                {
+                    "name": "disabled_phone_21_old",
+                    "slots": "50-99",
+                    "composite_filter": "form_factor == phone and sdk_version >= 21 and first_install_date < '2018-03-12Z'"
+                },
+                {
+                    "name": "enabled_phone_16_old",
+                    "slots": "0-79",
+                    "composite_filter": "form_factor == phone and sdk_version < 21 and first_install_date < '2018-03-12Z'"
+                },
+                {
+                    "name": "disabled_phone_16_old",
+                    "slots": "80-159",
+                    "composite_filter": "form_factor == phone and sdk_version < 21 and first_install_date < '2018-03-12Z'"
+                },
+                {
+                    "name": "enabled_tablet_old",
+                    "slots": "0-49",
+                    "composite_filter": "form_factor == tablet and sdk_version >= 21 and first_install_date < '2018-03-12Z'"
+                },
+                {
+                    "name": "disabled_tablet_old",
+                    "slots": "50-99",
+                    "composite_filter": "form_factor == tablet and sdk_version >= 21 and first_install_date < '2018-03-12Z'"
+                }
+            ]
+        },
+        {
+            "name": "zen_video",
+            "salt": "1810_zen_video",
+            "logging": "zen",
+            "default_group_name": "default_enabled",
+            "params": {
+                "view_type": "system"
+            },
+            "groups": [
+                {
+                    "name": "1810_enabled_autoplay_on_phone",
+                    "slots": "0-249",
+                    "filter": {
+                        "form_factor": "phone",
+                        "min_sdk_version": 21
+                    },
+                    "params": {
+                        "autoplay": "true",
+                        "view_type": "system"
+                    }
+                },
+                {
+                    "name": "1810_enabled_autoplay_off_phone",
+                    "slots": "250-499",
+                    "filter": {
+                        "form_factor": "phone",
+                        "min_sdk_version": 21
+                    },
+                    "params": {
+                        "autoplay": "false",
+                        "view_type": "system"
+                    }
+                }
+            ]
+        }
+    ]
+}
