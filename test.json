@@ -467,88 +467,11 @@
             },
             "groups": [
                 {
-                    "name": "disabled_old",
-                    "slots": "0-49",
-                    "params": {
-                        "show_promo_ui": "false",
-                        "show_button_in_omnibox": "false"
-                    },
-                    "filter": {
-                        "max_install_date": "2018-04-01Z"
-                    }
-                },
-                {
-                    "name": "enabled_old",
-                    "slots": "50-99",
-                    "params": {
-                        "show_promo_ui": "false",
-                        "show_button_in_omnibox": "false"
-                    },
-                    "filter": {
-                        "max_install_date": "2018-04-01Z"
-                    }
-                },
-                {
-                    "name": "enabled_with_omnibox_ui_old",
-                    "slots": "100-149",
-                    "params": {
-                        "show_promo_ui": "false",
-                        "show_button_in_omnibox": "true"
-                    },
-                    "filter": {
-                        "max_install_date": "2018-04-01Z"
-                    }
-                },
-                {
-                    "name": "enabled_with_promo_and_ui_old",
-                    "slots": "150-199",
-                    "params": {
-                        "show_promo_ui": "true",
-                        "show_button_in_omnibox": "true"
-                    },
-                    "filter": {
-                        "max_install_date": "2018-04-01Z"
-                    }
-                },
-                {
                     "name": "disabled_new",
-                    "slots": "0-99",
+                    "slots": "0-999",
                     "params": {
                         "show_promo_ui": "false",
                         "show_button_in_omnibox": "false"
-                    },
-                    "filter": {
-                        "min_install_date": "2018-04-17Z"
-                    }
-                },
-                {
-                    "name": "enabled_new",
-                    "slots": "100-199",
-                    "params": {
-                        "show_promo_ui": "false",
-                        "show_button_in_omnibox": "false"
-                    },
-                    "filter": {
-                        "min_install_date": "2018-04-17Z"
-                    }
-                },
-                {
-                    "name": "enabled_with_omnibox_ui_new",
-                    "slots": "200-299",
-                    "params": {
-                        "show_promo_ui": "false",
-                        "show_button_in_omnibox": "true"
-                    },
-                    "filter": {
-                        "min_install_date": "2018-04-17Z"
-                    }
-                },
-                {
-                    "name": "enabled_with_promo_and_ui_new",
-                    "slots": "300-399",
-                    "params": {
-                        "show_promo_ui": "true",
-                        "show_button_in_omnibox": "true"
                     },
                     "filter": {
                         "min_install_date": "2018-04-17Z"
