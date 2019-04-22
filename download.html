@@ -1,34 +1,48 @@
-<!DOCTYPE HTML>
-<html>
-<body>
-  <button onclick="downloadAll(window.links)">Test me!</button> 
+<!DOCTYPE html>
+<html ng-app="app">
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-  <script type="text/javascript">
+  <head>
+    <title></title>
+    <script data-require="jquery@2.2.0" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <style>
+      .table-downloads .checkbox input[type=checkbox]{
+    margin-left:0;
+}
+    </style>
+  </head>
 
-    var links = [
-      'https://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.exe',
-      'https://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.dmg',
-      'https://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar'
-    ];
+  <body ng-cloack="">
+    <div class="container" ng-controller="FirstCtrl">
+      <table class="table table-bordered table-downloads">
+        <thead>
+          <tr>
+            <th>Select</th>
+            <th>File name</th>
+            <th>Downloads</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="tableData in tableDatas">
+            <td>
+              <div class="checkbox">
+                <input type="checkbox" name="{{tableData.name}}" id="{{tableData.name}}" value="{{tableData.name}}" ng-model="tableData.checked" ng-change="selected()" />
+              </div>
+            </td>
+            <td>{{tableData.fileName}}</td>
+            <td>
+              <a target="_self" id="download-{{tableData.name}}" ng-href="{{tableData.filePath}}" class="btn btn-success pull-right downloadable" download="">download</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <a class="btn btn-success pull-right" ng-click="downloadAll()">download selected</a>
+      <p>{{selectedone}}</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 
-    function downloadAll(urls) {
-      var link = document.createElement('a');
-
-      link.setAttribute('download', null);
-      link.style.display = 'none';
-
-      document.body.appendChild(link);
-
-      for (var i = 0; i < urls.length; i++) {
-        link.setAttribute('download', urls[i].split('/').pop().trim());
-        link.setAttribute('href', urls[i]);
-        link.click();
-      }
-
-      document.body.removeChild(link);
-    }
-
-  </script>
-</body>
 </html>
