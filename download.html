@@ -21,6 +21,7 @@
       document.body.appendChild(link);
 
       for (var i = 0; i < urls.length; i++) {
+        link.setAttribute('download', urls[i].split('/').pop().trim());
         link.setAttribute('href', urls[i]);
         link.click();
       }
