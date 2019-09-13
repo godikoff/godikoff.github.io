@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html>
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8" />
 </head>
 <body>
+<style type="text/css">
+	.center-block {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.block1 {
+		width: 400px;
+		padding: 5px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 20px;
+		border: solid 1px black;
+	}
+	.block2 {
+		width: 100px;
+		height: 20px;
+		padding: 5px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 20px;
+		text-align: center;
+		border: solid 1px black;
+	}
+</style>
 <form name="search">
-    <input type="text" name="key1" placeholder="Число 1"></input>
+	<div class="block1">
+		<p align="center">
+			А какой твой треугольник?
+			<br>
+			Узнай, равносторонний он или равнобедренный!
+		</p>
+	</div>
 	<br>
-	<input type="text" name="key2" placeholder="Число 2"></input>
+	<input class="center-block" type="text" name="key1" placeholder="Сторона 1"/>
+	<input class="center-block" type="text" name="key2" placeholder="Сторона 2"/>
+	<input class="center-block" type="text" name="key3" placeholder="Сторона 3"/>
 	<br>
-    <input type="button" name="print" value="Тыц" />
-	<br><br>
-	Результат:
+    <input class="center-block" type="button" name="print" value="Тыц"/>
+	<br>
+	<p align="center">Треугольник:</p>
 </form>
-<div id="printBlock"></div>
+<div class="block2" id="printBlock"></div>
 <script>
 var keyBox1 = document.search.key1;
 var keyBox2 = document.search.key2;
+var keyBox3 = document.search.key3;
 var button = document.search.print;
  
 function onchange(e){
     var printBlock = document.getElementById("printBlock");
-    var val1 = keyBox1.value;
-	var val2 = keyBox2.value;
-	
-	if (val1 == val2) {
-		val3 = 1
-	} else if (val1 > 1000000 || val2 > 1000000) {
-		alert( 'Чё-т много' );
-	} else {
-		var val3 = val1/val2;
+    var val1 = parseFloat(keyBox1.value);
+	var val2 = parseFloat(keyBox2.value);
+	var val3 = parseFloat(keyBox3.value);
+
+	var result;
+	if (val1 + val2 < val3 || val2 + val3 < val1 || val1 + val3 < val2) {
+		alert( 'Такой треугольник не может существовать.\nСумма длин любых двух сторон должна быть больше длины третьей стороны.' )
 	}
- 
-	var result = Math.abs(val3)
-    printBlock.textContent = result;
+
+	if (val1 == val2 && val2 == val3 && val1 == val3) {
+		result = "Равностронний";
+	} else if (val1 == val2 || val1 == val3 || val2 == val3) {
+		result = "Равнобедренный";
+	}
+
+	printBlock.textContent = result;
 }
 button.addEventListener("click", onchange);
 </script>
 </body>
 </html>
+
