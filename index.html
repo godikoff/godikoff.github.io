@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!DOCTYPE html>
-<html>
 <head>
     <meta charset="utf-8" />
 </head>
@@ -61,21 +59,24 @@ function onchange(e){
 	var val2 = parseFloat(keyBox2.value);
 	var val3 = parseFloat(keyBox3.value);
 
-	var result;
-	if (val1 + val2 < val3 || val2 + val3 < val1 || val1 + val3 < val2) {
-		alert( 'Такой треугольник не может существовать.\nСумма длин любых двух сторон должна быть больше длины третьей стороны.' )
-	}
+	if (val1 > 5000000 || val2 > 5000000 || val3 > 5000000) {
+		alert('Слишком большое значение');
+	} else {
+		var result;
+		if (val1 + val2 < val3 || val2 + val3 < val1 || val1 + val3 < val2) {
+			alert('Такой треугольник не может существовать.\nСумма длин любых двух сторон должна быть больше длины третьей стороны.')
+		}
 
-	if (val1 == val2 && val2 == val3 && val1 == val3) {
-		result = "Равностронний";
-	} else if (val1 == val2 || val1 == val3 || val2 == val3) {
-		result = "Равнобедренный";
-	}
+		if (val1 == val2 && val2 == val3 && val1 == val3) {
+			result = "Равностронний";
+		} else if (val1 == val2 || val1 == val3 || val2 == val3) {
+			result = "Равнобедренный";
+		}
 
-	printBlock.textContent = result;
+		printBlock.textContent = result;
+	}
 }
 button.addEventListener("click", onchange);
 </script>
 </body>
 </html>
-
