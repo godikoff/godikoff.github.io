@@ -96,6 +96,11 @@
 		ga(function(tracker) {
 			console.log(tracker.get('clientId'));
 		});
+		ga('set', {
+			'field1': keyBox1.value,
+			'field2': keyBox2.value,
+			'field3': keyBox3.value,
+		});
 		ga('send', {
 			hitType: 'event',
 			eventCategory: 'Fields',
