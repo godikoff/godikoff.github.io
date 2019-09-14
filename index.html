@@ -83,6 +83,10 @@ function onchange(e){
 
 		printBlock.textContent = result;
 	}
+	ga('create', 'UA-147994941-1', 'auto');
+	ga(function(tracker) {
+		console.log(tracker.get('clientId'));
+	});
 	ga('send', {
 		hitType: 'event',
 		eventCategory: 'Fields',
