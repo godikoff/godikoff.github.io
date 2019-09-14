@@ -83,6 +83,12 @@ function onchange(e){
 
 		printBlock.textContent = result;
 	}
+	ga('send', {
+		hitType: 'event',
+		eventCategory: 'Fields',
+		eventAction: 'Input',
+		fieldsObject: [keyBox1.value, keyBox2.value, keyBox3.value]
+	});
 }
 button.addEventListener("click", onchange);
 </script>
