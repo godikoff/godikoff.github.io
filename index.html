@@ -75,6 +75,8 @@
 		var val1 = parseFloat(keyBox1.value);
 		var val2 = parseFloat(keyBox2.value);
 		var val3 = parseFloat(keyBox3.value);
+		var event = keyBox1.value + " " + keyBox2.value + keyBox3.value;
+		console.log(event);
 
 		if (val1 > 5000000 || val2 > 5000000 || val3 > 5000000) {
 			alert('Слишком большое значение');
@@ -105,7 +107,7 @@
 			hitType: 'event',
 			eventCategory: 'Fields',
 			eventAction: 'Input',
-			fieldsObject: [keyBox1.value, keyBox2.value, keyBox3.value]
+			eventLabel: event
 		});
 	}
 button.addEventListener("click", onchange);
