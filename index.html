@@ -64,7 +64,6 @@
 </form>
 <div class="block2" id="printBlock"></div>
 <script>
-	console.log(ga.q);
 	var keyBox1 = document.search.key1;
 	var keyBox2 = document.search.key2;
 	var keyBox3 = document.search.key3;
@@ -76,7 +75,6 @@
 		var val2 = parseFloat(keyBox2.value);
 		var val3 = parseFloat(keyBox3.value);
 		var event = keyBox1.value + " " + keyBox2.value + " " + keyBox3.value;
-		console.log(event);
 
 		if (val1 > 5000000 || val2 > 5000000 || val3 > 5000000) {
 			alert('Слишком большое значение');
@@ -95,14 +93,6 @@
 			printBlock.textContent = result;
 		}
 		ga('create', 'UA-147994941-1', 'auto');
-		ga(function(tracker) {
-			console.log(tracker.get('clientId'));
-		});
-		ga('set', {
-			'field1': keyBox1.value,
-			'field2': keyBox2.value,
-			'field3': keyBox3.value,
-		});
 		ga('send', {
 			hitType: 'event',
 			eventCategory: 'Fields',
